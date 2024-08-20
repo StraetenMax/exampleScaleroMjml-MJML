@@ -5,34 +5,43 @@
             <mj-button padding="0"/>
             <mj-table padding="0"/>
             <mj-column padding="0"/>
-            <mj-section padding="0"/>
+            <mj-section padding="0" background-color="#ffffff"/>
             <mj-wrapper padding="0"/>
             <mj-all font-family="Tahoma, sans-serif"/>
         </mj-attributes>
         <mj-preview>
             Hi There, Person
         </mj-preview>
-        <mj-breakpoint width="420px" />
+        <mj-breakpoint width="360px" />
+        <mj-style>
+            .pad{
+                padding:10px 40px;
+            }
+            @media (max-width:360px){
+                .pad{
+                    padding:10px 20px !important;
+                }
+            }
+        </mj-style>
     </mj-head>
-    <mj-body>
+    <mj-body background-color="#ededed">
         <mj-section>
-            <mj-column>
-                <mj-image src="100px" alt="logo Ecosup" />
+            <mj-column padding="30px 0 10px 0">
+                <mj-image width="100px" src="https://i.ibb.co/1GKXZN1/Entreprise04-Assurance.png" alt="logo Ecosup" />
             </mj-column>
         </mj-section>
         <mj-section>
             <mj-column>
-                <mj-text font-family="tahoma" color="#1E5FD1" font-weight="700" line-height="140%" align="center">
-                    <h1>Hi There, Person!</h1>
+                <mj-text padding="0" font-family="tahoma" color="#6a4195" font-weight="700" line-height="36px" align="center">
+                    <h1 class="pad" style="margin:0px; font-size:30px">Hi There, Person!</h1>
                 </mj-text>
-                <mj-text font-family="tahoma" font-size="20px" font-weight="400" line-height="140%" color="#626262" >
-                    <p style="margin:10px 0 0 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <p style="margin:10px 0 10px 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <mj-text padding="0" font-family="tahoma" font-size="16px" font-weight="400" line-height="140%" color="#626262" >
+                    <p class="pad" style="margin:0px"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p class="pad" style="margin:20px 0 0 0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </mj-text>
-                <mj-button background-color="#005BF2" width="80%" font-size="20px" font-weight="700" line-height="140%">
+                <mj-button padding="20px 0 50px 0" background-color="#6a4195" width="80%" font-size="20px" font-weight="700" line-height="140%">
                     Start Now
                 </mj-button> 
-                
             </mj-column>
         </mj-section>
     </body>
